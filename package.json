@@ -1,0 +1,29 @@
+{
+  "name": "FriendFinder",
+  "version": "1.4.0",
+  "description": "",
+  "engines": {
+    "node": "8.11.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "load-json-file": "^5.0.0",
+    "write-json-file": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevenpassey/FriendFinder"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC"
+}
