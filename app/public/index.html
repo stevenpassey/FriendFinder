@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Friend Finder</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="flex_table.css">
+<script src="questions.js">
+</script>
+<script src="index_v1-4.js">
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="title-bar">
+		<div id="logo-text" onClick="changeSlide('slide')" ontouchstart="changeSlide('slide')">
+			FriendFinder
+		</div>
+		<div id="survey-text" onClick="changeSlide('survey')" ontouchstart="changeSlide('survey')">
+			Survey
+		</div>
+		<div id="raw-data-text" onClick="showRawData()">
+			Raw Data
+		</div>
+	</div>
+	<div id="logo-animation">
+		<svg x="0px" y="0px" width="80px" height="10px" viewBox="0 0 80 1">
+			<line id="line-loader" class="circleDashStroke" x1="0" y1="0.5" x2="80" y2="0.5">
+		</svg>
+	</div>
+	<div id="slide">
+		<img src="" id="slide-image">
+	</div>
+	<div id="slide_overlay">
+		<div id="text_overlay">
+			Use Coding and Algorithms<br>
+			to Find Friends.
+			<br><br>
+			<button onClick="changeSlide('survey')">Take the survey</button>
+		</div>
+	</div>
+	<div id="survey-div" class="survey" onclick="enableButton(this)" ontouchstart="enableButton(this)">
+	<br>
+		<span class="survey-title">Survey</span>
+		<br><br>
+		<span class="survey-question"><strong>Question 1:</strong> How likely? </span><br>
+		&nbsp; &nbsp; &nbsp; &nbsp; 
+		<label class="custom_radio">
+			<span class="answerHTML">
+				Extremely Unlikely
+			</span>
+			<input type="radio" name="qs" value="1">
+			<span class="custom_circle">
+		</label>
+		&nbsp; &nbsp; &nbsp; &nbsp; 
+		<label class="custom_radio">
+			<span class="answerHTML">
+				Not Likely
+			</span>
+			<input type="radio" name="qs" value="2">
+			<span class="custom_circle">
+		</label>
+		&nbsp; &nbsp; &nbsp; &nbsp; 
+		<label class="custom_radio">
+			<span class="answerHTML">
+				Likely
+			</span>
+			<input type="radio" name="qs" value="3">
+			<span class="custom_circle">
+		</label>
+		&nbsp; &nbsp; &nbsp; &nbsp; 
+		<label class="custom_radio">
+		<span class="answerHTML">
+				Very Likely
+			</span>
+			<input type="radio" name="qs" value="4">
+			<span class="custom_circle">
+		</label>
+		&nbsp; &nbsp; &nbsp; &nbsp; 
+		<label class="custom_radio">
+			<span class="answerHTML">
+				Extremely Likely
+			</span>
+			<input type="radio" name="qs" value="5">
+			<span class="custom_circle">
+		</label>
+		<br>
+		<div class="button-state-container">
+			<button class="gray">
+				Next Question &nbsp; &nbsp; &nbsp; &nbsp; <img src="./arrow.png" width="50px" height="50px">
+			</button>
+		</div>
+	</div>
+</body>
+</html>
